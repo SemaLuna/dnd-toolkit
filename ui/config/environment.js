@@ -41,7 +41,8 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    // here you can enable a production-specific feature
+    ENV.rootURL = '/dnd-toolkit/';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
