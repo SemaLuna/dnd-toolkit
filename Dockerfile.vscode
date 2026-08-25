@@ -1,0 +1,13 @@
+# Using Krypton, LTS version of Node - the full one, for easier dev (less installing) - the individual services use the slim version.
+FROM node:24.18.0
+
+# Installed required tooling for using bash or any VSCode extensions
+RUN npm install -g ember-cli@6.12
+
+# Adds support for keeping command history
+ARG USERNAME=node
+RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/command-history/.bash_history" \
+    && mkdir /command-history \
+    && touch /command-history/.bash_history \
+    && chown -R $USERNAME /command-history \
+    && echo "$SNIPPET" >> "/home/$USERNAME/.bashrc"

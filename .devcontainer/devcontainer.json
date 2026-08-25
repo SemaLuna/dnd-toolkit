@@ -1,0 +1,14 @@
+{
+  "name": "Compose (Extend)",
+
+  "dockerComposeFile": ["../compose.yaml"],
+
+  "service": "dev",
+  "workspaceFolder": "/home/node/app",
+
+  "customizations": {
+    "vscode": {
+      "extensions": ["EmberTooling.emberjs"]
+    }
+  }
+}

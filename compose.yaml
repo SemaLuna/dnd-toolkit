@@ -1,0 +1,38 @@
+# Used to deploy the app fully locally, including a VS Code dev environment
+name: DND Toolkit - Dev
+
+services:
+  ui:
+    image: node:24.18.0-slim
+    container_name: ui_ember_dnd_toolkit
+    user: node
+    working_dir: /home/node/app
+    entrypoint: ["docker-entrypoint.sh"]
+    command: npm run start
+    ports:
+      - 4200:4200
+    volumes:
+      - type: bind
+        source: ./ui
+        target: /home/node/app
+
+  dev:
+    image: dnd-toolkit-dev:dev
+    # Prevent trying to find the image in a registry
+    pull_policy: never
+    container_name: dev_vscode_dnd_toolkit
+    build:
+      context: .
+      dockerfile: Dockerfile.vscode
+    user: node
+    working_dir: /home/node/app
+    command: sleep infinity
+    stop_grace_period: 3s
+    volumes:
+      - bash-history:/command-history
+      - type: bind
+        source: .
+        target: /home/node/app
+
+volumes:
+  bash-history:
