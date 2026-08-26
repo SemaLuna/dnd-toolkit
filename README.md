@@ -1,4 +1,4 @@
-TODO list for Dev:
+# TODO list for Dev:
 
 - Enable ssh-agent - https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials#_using-ssh-keys (it seems to just work when you do it once, then reopen the container from the code inside WSL without touching Windows)
   - Make sure to run ssh-agent -s &> $HOME/.ssh/ssh-agent manually - then verify ssh-add -l includes the credentials
