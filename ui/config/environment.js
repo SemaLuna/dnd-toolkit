@@ -2,7 +2,7 @@
 
 module.exports = function (environment) {
   const ENV = {
-    modulePrefix: 'ui',
+    modulePrefix: 'dnd-toolkit',
     environment,
     rootURL: '/',
     locationType: 'history',
