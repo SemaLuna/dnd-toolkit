@@ -15,7 +15,7 @@
     "test": "tests"
   },
   "scripts": {
-    "build": "vite build",
+    "build": "vite build --base=/dnd-toolkit/",
     "format": "prettier . --cache --write",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
     "lint:css": "stylelint \"**/*.css\"",
