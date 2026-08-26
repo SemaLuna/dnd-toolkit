@@ -7,7 +7,7 @@ services:
     container_name: ui_ember_dnd_toolkit
     user: node
     working_dir: /home/node/app
-    entrypoint: ["docker-entrypoint.sh"]
+    entrypoint: ["./docker-entrypoint.sh"]
     command: npm run start
     ports:
       - 4200:4200

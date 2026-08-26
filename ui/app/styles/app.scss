@@ -1,0 +1,11 @@
+/* Ember supports plain CSS out of the box. More info: https://cli.emberjs.com/release/advanced-use/stylesheets/ */
+@use "@hashicorp/design-system-components";
+
+body.ember-application {
+  margin: 0;
+}
+
+// The variable --token-app-header-height is used to calculate height of several of the HDS frame items - it does not account for border or padding in the header, leading to vertical scroll
+.hds-app-header {
+  box-sizing: border-box;
+}
