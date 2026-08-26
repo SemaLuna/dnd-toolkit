@@ -8,7 +8,18 @@ export default async function (defaults) {
   const { buildOnce } = await import('@embroider/vite');
 
   const app = new EmberApp(defaults, {
-    // Add options here
+    sassOptions: {
+      precision: 4,
+      includePaths: [
+        './node_modules/@hashicorp/design-system-tokens/dist/products/css',
+        './node_modules/@hashicorp/design-system-components/dist/styles',
+      ],
+    },
+    minifyCSS: {
+      options: {
+        advanced: false,
+      },
+    },
   });
 
   setConfig(app, dirname(fileURLToPath(import.meta.url)), {
