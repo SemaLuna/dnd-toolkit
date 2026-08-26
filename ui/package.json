@@ -15,7 +15,8 @@
     "test": "tests"
   },
   "imports": {
-    "#helpers/*": "./app/helpers/*"
+    "#helpers/*": "./app/helpers/*",
+    "#data/*": "./app/data/*"
   },
   "scripts": {
     "build": "vite build --base=/dnd-toolkit/",
@@ -39,6 +40,7 @@
     "@babel/plugin-transform-runtime": "^7.29.0",
     "@babel/plugin-transform-typescript": "^7.28.6",
     "@babel/runtime": "^7.29.2",
+    "@ember-data/debug": "^5.3.13",
     "@ember/app-tsconfig": "^1.0.3",
     "@ember/optional-features": "^3.0.0",
     "@ember/string": "^4.0.1",
@@ -79,7 +81,6 @@
     "ember-resolver": "^13.2.0",
     "ember-source": "~6.12.0",
     "ember-template-lint": "^7.9.3",
-    "ember-welcome-page": "^8.0.5",
     "eslint": "^9.39.4",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-ember": "^12.7.5",
