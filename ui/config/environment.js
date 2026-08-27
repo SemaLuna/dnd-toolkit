@@ -4,7 +4,7 @@ module.exports = function (environment) {
   const ENV = {
     modulePrefix: 'ui',
     environment,
-    rootURL: '/',
+    rootURL: '/dnd-toolkit/',
     locationType: 'history',
     EmberENV: {
       EXTEND_PROTOTYPES: false,
@@ -41,7 +41,6 @@ module.exports = function (environment) {
   }
 
   if (environment === 'production') {
-    ENV.rootURL = '/dnd-toolkit/';
     ENV.locationType = 'hash';
   }
 

@@ -39,10 +39,7 @@ export default class OriginPrivateFileSystemHandler {
     // }
 
     const fileHandle = await this.getOrCreateFileHandle(
-      context.request.url.substring(
-        '/srd/'.length,
-        context.request.url.length - 3,
-      ), // Remove the leading '/srd/'
+      context.request.url.substring(1), // Remove leading slash
       rootOpfsHandler,
     );
 
