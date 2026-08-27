@@ -55,5 +55,11 @@ import { t } from 'ember-intl';
       @route="spell-area-calc"
       @isActive={{isActive "spell-area-calc"}}
     />
+    <Nav.Link
+      @text="Spell Table"
+      @icon="guide"
+      @route="spell-table"
+      @isActive={{isActive "spell-table"}}
+    />
   </HdsAppSideNavPortal>
 </template>
