@@ -22,6 +22,7 @@ export default class App extends Application {
   podModulePrefix = config.podModulePrefix;
   Resolver = Resolver.withModules(compatModules);
   inspector = setupInspector(this);
+  LOG_RESOLVER = true;
 }
 
 loadInitializers(App, config.modulePrefix, compatModules);
