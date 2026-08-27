@@ -1,11 +1,3 @@
-# TODO list for Dev:
-
-- Enable ssh-agent - https://code.visualstudio.com/remote/advancedcontainers/sharing-git-credentials#_using-ssh-keys (it seems to just work when you do it once, then reopen the container from the code inside WSL without touching Windows)
-  - Make sure to run ssh-agent -s &> $HOME/.ssh/ssh-agent manually - then verify ssh-add -l includes the credentials
-  - Verify you can git fetch
-- Install ember inspector for firefox: https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/ - then make sure on the extension settings that it includes 'Access Data from all Sites'
-  - Verify you can see ember inspector running on the browser
-
 # Technical Overview
 
 - The website is hosted on Github - as static files.
