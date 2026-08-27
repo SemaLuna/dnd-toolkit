@@ -19,7 +19,7 @@
     "#data/*": "./app/data/*"
   },
   "scripts": {
-    "build": "vite build --base=/dnd-toolkit/",
+    "build": "vite build",
     "format": "prettier . --cache --write",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
     "lint:css": "stylelint \"**/*.css\"",
