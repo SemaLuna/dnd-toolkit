@@ -16,7 +16,9 @@
   },
   "imports": {
     "#helpers/*": "./app/helpers/*",
-    "#data/*": "./app/data/*"
+    "#data/*": "./app/data/*",
+    "#utils/*": "./app/utils/*",
+    "#routes/*": "./app/routes/*"
   },
   "scripts": {
     "build": "vite build",
