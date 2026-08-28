@@ -18,7 +18,8 @@
     "#helpers/*": "./app/helpers/*",
     "#data/*": "./app/data/*",
     "#utils/*": "./app/utils/*",
-    "#routes/*": "./app/routes/*"
+    "#routes/*": "./app/routes/*",
+    "#components/*": "./app/components/*"
   },
   "scripts": {
     "build": "vite build",

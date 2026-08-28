@@ -3,6 +3,7 @@ import { pageTitle } from 'ember-page-title';
 import type { ModelFrom } from '#utils/ember-type.ts';
 import SpellTableRoute from '#routes/spell-table.ts';
 import { Request } from '@warp-drive/ember';
+import SpellsTable from '#components/spell-table.gts';
 
 interface SpellTableSignature {
   Args: {
@@ -15,11 +16,7 @@ interface SpellTableSignature {
   {{pageTitle "Spell Table"}}
   <Request @request={{@model.request}}>
     <:content as |spells|>
-      I cast
-      {{log spells.data}}
-      {{#each spells.data as |spell|}}
-        {{spell.name}}!
-      {{/each}}
+      <SpellsTable @spells={{spells.data}} />
     </:content>
   </Request>
 </template> satisfies TOC<SpellTableSignature>;
