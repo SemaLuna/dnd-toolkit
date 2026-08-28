@@ -10,17 +10,16 @@ interface SpellsTableSignature {
 }
 
 <template>
-  {{#each @spells as |spell|}}
-    <p>{{spell.name}}</p>
-  {{/each}}
   <HdsTable
     @model={{@spells}}
-    @columns={{array (hash key="name" label="Name")}}
-  >
-    {{!--
+    @columns={{array
+      (hash key="name" label="Name")
       (hash key="range" label="Range")
       (hash key="desc" label="Description")
-     <:body as |B|>
+    }}
+    @sortBy="name"
+  >
+    <:body as |B|>
       <B.Tr>
         <B.Td>{{B.data.name}}</B.Td>
         <B.Td>{{B.data.range}}</B.Td>
@@ -30,6 +29,6 @@ interface SpellsTableSignature {
           {{/each}}
         </B.Td>
       </B.Tr>
-    </:body> --}}
+    </:body>
   </HdsTable>
 </template> satisfies TOC<SpellsTableSignature>;
