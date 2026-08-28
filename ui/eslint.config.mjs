@@ -29,6 +29,8 @@ import qunit from 'eslint-plugin-qunit';
 import n from 'eslint-plugin-n';
 
 import babelParser from '@babel/eslint-parser/experimental-worker';
+import eslintPluginEmberTemplateLintMigration from 'eslint-plugin-ember/configs/template-lint-migration';
+import localRule from './eslint-rules/no-bare-strings-in-args.js';
 
 const parserOptions = {
   esm: {
@@ -51,6 +53,7 @@ export default defineConfig([
   ember.configs.gts,
   ...WarpDrive,
   eslintConfigPrettier,
+  ...eslintPluginEmberTemplateLintMigration,
   /**
    * https://eslint.org/docs/latest/use/configure/configuration-files#configuring-linter-options
    */
@@ -86,6 +89,19 @@ export default defineConfig([
     extends: [...ts.configs.recommendedTypeChecked, ember.configs.gts],
   },
   {
+    files: ['**/*.{ts,gts}'],
+    rules: {
+      'ember/template-no-bare-strings': ['error', { allowlist: ['×'] }],
+    },
+  },
+  {
+    files: ['**/*.gjs', '**/*.gts'],
+    plugins: { local: { rules: { 'no-bare-strings-in-args': localRule } } },
+    rules: {
+      'local/no-bare-strings-in-args': ['error', { argNames: ['text'] }],
+    },
+  },
+  {
     ...qunit.configs.recommended,
     files: ['tests/**/*-test.{js,gjs,ts,gts}'],
     plugins: {
@@ -97,7 +113,7 @@ export default defineConfig([
    */
   {
     ...n.configs['flat/recommended-script'],
-    files: ['**/*.cjs', 'config/**/*.js'],
+    files: ['**/*.cjs', 'config/**/*.js', 'eslint-rules/**/*.js'],
     plugins: {
       n,
     },
