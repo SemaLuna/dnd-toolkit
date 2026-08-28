@@ -56,7 +56,7 @@ import { t } from 'ember-intl';
       @isActive={{isActive "spell-area-calc"}}
     />
     <Nav.Link
-      @text="Spell Table"
+      @text={{t "navigation.spell-table"}}
       @icon="guide"
       @route="spell-table"
       @isActive={{isActive "spell-table"}}
