@@ -9,16 +9,17 @@ import {
 } from '@hashicorp/design-system-components/components';
 import { pageTitle } from 'ember-page-title';
 import { default as isActive } from '#helpers/is-active.ts';
+import { t } from 'ember-intl';
 
 <template>
-  {{pageTitle "DND Toolkit"}}
+  {{pageTitle (t "project.name")}}
   <HdsAppFrame as |Frame|>
     <Frame.Header>
       <HdsAppHeader>
         <:logo>
           <HdsAppHeaderHomeLink
             @icon="hammer"
-            @text="DND Toolkit"
+            @text={{t "project.name"}}
             @route="index"
             @isIconOnly={{false}}
           />
@@ -43,13 +44,13 @@ import { default as isActive } from '#helpers/is-active.ts';
 
   <HdsAppSideNavPortal as |Nav|>
     <Nav.Link
-      @text="Home"
+      @text={{t "navigation.home"}}
       @icon="home"
       @route="index"
       @isActive={{isActive "index"}}
     />
     <Nav.Link
-      @text="Spell Area Calculator"
+      @text={{t "navigation.spell-area"}}
       @icon="wand"
       @route="spell-area-calc"
       @isActive={{isActive "spell-area-calc"}}

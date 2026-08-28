@@ -22,7 +22,7 @@ module('Integration | Helper | is-active', function (hooks) {
     const CSS_SELECTOR = 'input';
     await render<TestContext>(
       <template>
-        {{! template-lint-disable require-input-label }}
+        {{! eslint-disable ember/template-require-input-label }}
         <input type="checkbox" checked={{isActive activeRouteName}} />
       </template>,
     );
@@ -32,7 +32,7 @@ module('Integration | Helper | is-active', function (hooks) {
 
     await render<TestContext>(
       <template>
-        {{! template-lint-disable require-input-label }}
+        {{! eslint-disable ember/template-require-input-label }}
         <input type="checkbox" checked={{isActive "inactive-route"}} />
       </template>,
     );
