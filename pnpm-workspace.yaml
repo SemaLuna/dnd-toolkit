@@ -1,0 +1,12 @@
+packages:
+  - "ui"
+allowBuilds:
+  "@parcel/watcher": true
+  core-js: true
+storeDir: /home/pnpm/store
+packageConfigs:
+  "ui":
+    saveExact: true
+overrides:
+  "ember-power-select": "^9.0.1"
+  "ember-basic-dropdown": "^9.0.0"

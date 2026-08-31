@@ -1,4 +1,6 @@
+import { t } from 'ember-intl';
+
 <template>
-  This is where we calculate spell areas
+  {{t "spell-area.info"}}
   {{outlet}}
 </template>

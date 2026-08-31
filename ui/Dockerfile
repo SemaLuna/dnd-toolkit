@@ -10,15 +10,6 @@ ARG HOME_DIR=/home/pnpm
 RUN groupadd --gid ${GROUP_ID} ${GROUPNAME}
 RUN useradd --uid ${USER_ID} --gid ${GROUP_ID} ${USERNAME} -d ${HOME_DIR} --create-home --shell /bin/bash
 
-# Adds support for keeping command history
-RUN SNIPPET="export PROMPT_COMMAND='history -a' && export HISTFILE=/command-history/.bash_history" \
-    && mkdir /command-history \
-    && touch /command-history/.bash_history \
-    && chown -R $USERNAME /command-history \
-    && echo "$SNIPPET" >> "/home/$USERNAME/.bashrc"
-
-RUN apt-get update && apt-get install git -y
-
 USER ${USERNAME}
 RUN mkdir ${HOME_DIR}/store
 RUN mkdir ${HOME_DIR}/global

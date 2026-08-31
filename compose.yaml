@@ -3,18 +3,26 @@ name: DND Toolkit - Dev
 
 services:
   ui:
-    image: node:24.18.0-slim
+    image: dnd-toolkit-ui:dev
     container_name: ui_ember_dnd_toolkit
-    user: node
-    working_dir: /home/node/app
-    entrypoint: ["./docker-entrypoint.sh"]
-    command: npm run start
+    build:
+      context: ./ui
+      dockerfile: Dockerfile
+    user: pnpm
+    working_dir: /home/pnpm/app
+    entrypoint: ["./ui/docker-entrypoint.sh"]
+    command: pnpm run -r start
+    environment:
+      - PNPM_HOME=/home/pnpm
     ports:
       - 4200:4200
     volumes:
+      - pnpm-store:/home/pnpm/store
+      - pnpm-global-store:/home/pnpm/global
+      - pnpm-global-bin:/home/pnpm/bin
       - type: bind
-        source: ./ui
-        target: /home/node/app
+        source: .
+        target: /home/pnpm/app
 
   dev:
     image: dnd-toolkit-dev:dev
@@ -24,15 +32,23 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.vscode
-    user: node
-    working_dir: /home/node/app
+    entrypoint: ["./docker-entrypoint.sh"]
+    working_dir: /home/pnpm/app
     command: sleep infinity
     stop_grace_period: 3s
+    environment:
+      - PNPM_HOME=/home/pnpm
     volumes:
       - bash-history:/command-history
+      - pnpm-store:/home/pnpm/store
+      - pnpm-global-store:/home/pnpm/global
+      - pnpm-global-bin:/home/pnpm/bin
       - type: bind
         source: .
-        target: /home/node/app
+        target: /home/pnpm/app
 
 volumes:
   bash-history:
+  pnpm-store:
+  pnpm-global-store:
+  pnpm-global-bin:

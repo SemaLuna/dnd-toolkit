@@ -1,5 +1,6 @@
+import { t } from 'ember-intl';
+
 <template>
-  This is where we have a fun little product statement, legal disclaimers, and
-  whatnots!
+  {{t "home.info"}}
   {{outlet}}
 </template>
