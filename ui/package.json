@@ -21,10 +21,10 @@
   "scripts": {
     "build": "vite build",
     "format": "prettier . --cache --write",
-    "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
+    "lint": "concurrently \"pnpm:lint:*(!fix)\" --names \"lint:\" --prefixColors auto",
     "lint:scss": "stylelint \"**/*.scss\"",
-    "lint:scss:fix": "concurrently \"npm:lint:scss -- --fix\"",
-    "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\" --prefixColors auto && npm run format",
+    "lint:scss:fix": "concurrently \"pnpm:lint:scss -- --fix\"",
+    "lint:fix": "concurrently \"pnpm:lint:*:fix\" --names \"fix:\" --prefixColors auto && pnpm run format",
     "lint:format": "prettier . --cache --check",
     "lint:js": "eslint . --cache",
     "lint:js:fix": "eslint . --fix",
@@ -32,8 +32,7 @@
     "lint:intl": "ember-intl-lint",
     "lint:intl:fix": "ember-intl-lint --fix",
     "start": "vite --host 0.0.0.0",
-    "test": "vite build --mode development && ember test --path dist",
-    "prepare": "cd .. && husky ui/.husky"
+    "test": "vite build --mode development && ember test --path dist"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
@@ -41,8 +40,6 @@
     "@babel/plugin-transform-runtime": "^7.29.0",
     "@babel/plugin-transform-typescript": "^7.28.6",
     "@babel/runtime": "^7.29.2",
-    "@commitlint/cli": "^21.2.2",
-    "@commitlint/config-conventional": "^21.2.2",
     "@ember-data/debug": "^5.3.13",
     "@ember-intl/lint": "^2.0.0",
     "@ember-intl/vite": "^2.0.0",
@@ -64,6 +61,7 @@
     "@glint/template": "^1.7.7",
     "@glint/tsserver-plugin": "^2.4.0",
     "@hashicorp/design-system-components": "^6.5.0",
+    "@hashicorp/design-system-tokens": "^5.1.0",
     "@rollup/plugin-babel": "^7.0.0",
     "@types/qunit": "^2.19.13",
     "@types/rsvp": "^4.0.9",
@@ -93,7 +91,6 @@
     "eslint-plugin-qunit": "^8.2.6",
     "eslint-plugin-warp-drive": "^5.8.1",
     "globals": "^16.5.0",
-    "husky": "^9.1.7",
     "prettier": "^3.8.1",
     "prettier-plugin-ember-template-tag": "^2.1.3",
     "qunit": "^2.25.0",
@@ -111,9 +108,5 @@
   },
   "ember": {
     "edition": "octane"
-  },
-  "overrides": {
-    "ember-power-select": "^9.0.1",
-    "ember-basic-dropdown": "^9.0.0"
   }
 }

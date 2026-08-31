@@ -3,3 +3,7 @@ project:
 navigation:
   home: Home
   spell-area: Spell Area Calculator
+home:
+  info: This is where we have a fun little product statement, legal disclaimers, and whatnots!
+spell-area:
+  info: This is where we calculate spell areas
