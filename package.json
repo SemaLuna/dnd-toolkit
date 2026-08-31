@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "devEngines": {
     "runtime": {
       "name": "node",
