@@ -7,3 +7,5 @@ home:
   info: This is where we have a fun little product statement, legal disclaimers, and whatnots!
 spell-area:
   info: This is where we calculate spell areas
+# Overwrite strings used in the HdsAppFooter so that it doesn't mention Hashicorp
+hds.components.app-footer.copyright.copyright-text: Copyright (c) 2026 SemaLuna, LunaroySimon

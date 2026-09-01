@@ -36,9 +36,7 @@ import { t } from 'ember-intl';
       {{outlet}}
     </Frame.Main>
     <Frame.Footer>
-      <HdsAppFooter as |AF|>
-        <AF.LegalLinks />
-      </HdsAppFooter>
+      <HdsAppFooter />
     </Frame.Footer>
   </HdsAppFrame>
 
