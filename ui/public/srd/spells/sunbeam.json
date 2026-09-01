@@ -1,0 +1,38 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "sunbeam",
+    "attributes": {
+      "name": "Sunbeam",
+      "description": [
+        "A beam of brilliant light flashes out from your hand in a 5-foot-wide, 60-foot-long line. Each creature in the line must make a constitution saving throw. On a failed save, a creature takes 6d8 radiant damage and is blinded until your next turn. On a successful save, it takes half as much damage and isn't blinded by this spell. Undead and oozes have disadvantage on this saving throw.",
+        "You can create a new line of radiance as your action on any turn until the spell ends.",
+        "For the duration, a mote of brilliant radiance shines in your hand. It sheds bright light in a 30-foot radius and dim light for an additional 30 feet. This light is sunlight."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 6,
+      "areaOfEffect": { "type": "line", "size": 60 },
+      "baseDamage": "6d8",
+      "damageAtSlotLevel": { "6": "6d8" },
+      "material": "A magnifying glass.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "damageType": { "data": { "type": "damage-types", "id": "radiant" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": []
+    }
+  }
+}

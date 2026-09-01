@@ -1,0 +1,46 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "moonbeam",
+    "attributes": {
+      "name": "Moonbeam",
+      "description": [
+        "A silvery beam of pale light shines down in a 5-foot radius, 40-foot-high cylinder centered on a point within range. Until the spell ends, dim light fills the cylinder.",
+        "When a creature enters the spell's area for the first time on a turn or starts its turn there, it is engulfed in ghostly flames that cause searing pain, and it must make a constitution saving throw. It takes 2d10 radiant damage on a failed save, or half as much damage on a successful one.",
+        "A shapechanger makes its saving throw with disadvantage. If it fails, it also instantly reverts to its original form and can't assume a different form until it leaves the spell's light.",
+        "On each of your turns after you cast this spell, you can use an action to move the beam 60 feet in any direction."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 3rd level or higher, the damage increases by 1dl0 for each slot level above 2nd."
+      ],
+      "range": "120 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 2,
+      "areaOfEffect": { "type": "cylinder", "size": 5 },
+      "baseDamage": "2d10",
+      "damageAtSlotLevel": {
+        "2": "2d10",
+        "3": "3d10",
+        "4": "4d10",
+        "5": "5d10",
+        "6": "6d10",
+        "7": "7d10",
+        "8": "8d10",
+        "9": "9d10"
+      },
+      "material": "Several seeds of any moonseed plant and a piece of opalescent feldspar.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "damageType": { "data": { "type": "damage-types", "id": "radiant" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [{ "data": { "type": "classes", "id": "druid" } }],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

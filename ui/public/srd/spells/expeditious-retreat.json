@@ -1,0 +1,29 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "expeditious-retreat",
+    "attributes": {
+      "name": "Expeditious Retreat",
+      "description": [
+        "This spell allows you to move at an incredible pace. When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 bonus action",
+      "level": 1
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "transmutation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

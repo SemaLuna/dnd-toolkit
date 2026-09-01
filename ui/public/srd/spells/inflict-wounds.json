@@ -1,0 +1,41 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "inflict-wounds",
+    "attributes": {
+      "name": "Inflict Wounds",
+      "description": [
+        "Make a melee spell attack against a creature you can reach. On a hit, the target takes 3d10 necrotic damage."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d10 for each slot level above 1st."
+      ],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "attackType": "melee",
+      "baseDamage": "3d10",
+      "damageAtSlotLevel": {
+        "1": "3d10",
+        "2": "4d10",
+        "3": "5d10",
+        "4": "6d10",
+        "5": "7d10",
+        "6": "8d10",
+        "7": "9d10",
+        "8": "10d10",
+        "9": "11d10"
+      }
+    },
+    "relationships": {
+      "damageType": { "data": { "type": "damage-types", "id": "necrotic" } },
+      "school": { "data": { "type": "magic-schools", "id": "necromancy" } },
+      "classes": [{ "data": { "type": "classes", "id": "cleric" } }],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

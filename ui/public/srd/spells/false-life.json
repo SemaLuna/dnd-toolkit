@@ -1,0 +1,43 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "false-life",
+    "attributes": {
+      "name": "False Life",
+      "description": [
+        "Bolstering yourself with a necromantic facsimile of life, you gain 1d4 + 4 temporary hit points for the duration."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, you gain 5 additional temporary hit points for each slot level above 1st."
+      ],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "1 hour",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "baseHeal": "1d4 + 4",
+      "healAtSlotLevel": {
+        "1": "1d4 + 4",
+        "2": "1d4 + 9",
+        "3": "1d4 + 14",
+        "4": "1d4 + 19",
+        "5": "1d4 + 24",
+        "6": "1d4 + 29",
+        "7": "1d4 + 34",
+        "8": "1d4 + 39",
+        "9": "1d4 + 44"
+      },
+      "material": "A small amount of alcohol or distilled spirits."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "necromancy" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

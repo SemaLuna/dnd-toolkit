@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "revivify",
+    "attributes": {
+      "name": "Revivify",
+      "description": [
+        "You touch a creature that has died within the last minute. That creature returns to life with 1 hit point. This spell can't return to life a creature that has died of old age, nor can it restore any missing body parts."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 3,
+      "material": "Diamonds worth 300gp, which the spell consumes."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "conjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "paladin" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "life" } }
+      ]
+    }
+  }
+}

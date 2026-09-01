@@ -1,0 +1,49 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "lightning-bolt",
+    "attributes": {
+      "name": "Lightning Bolt",
+      "description": [
+        "A stroke of lightning forming a line 100 feet long and 5 feet wide blasts out from you in a direction you choose. Each creature in the line must make a dexterity saving throw. A creature takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
+        "The lightning ignites flammable objects in the area that aren't being worn or carried."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+      ],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 3,
+      "areaOfEffect": { "type": "line", "size": 100 },
+      "baseDamage": "8d6",
+      "damageAtSlotLevel": {
+        "3": "8d6",
+        "4": "9d6",
+        "5": "10d6",
+        "6": "11d6",
+        "7": "12d6",
+        "8": "13d6",
+        "9": "14d6"
+      },
+      "material": "A bit of fur and a rod of amber, crystal, or glass.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "dex" } },
+      "damageType": { "data": { "type": "damage-types", "id": "lightning" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "protection-from-poison",
+    "attributes": {
+      "name": "Protection from Poison",
+      "description": [
+        "You touch a creature. If it is poisoned, you neutralize the poison. If more than one poison afflicts the target, you neutralize one poison that you know is present, or you neutralize one at random.",
+        "For the duration, the target has advantage on saving throws against being poisoned, and it has resistance to poison damage."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "1 hour",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "paladin" } },
+        { "data": { "type": "classes", "id": "ranger" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

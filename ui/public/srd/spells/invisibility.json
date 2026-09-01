@@ -1,0 +1,36 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "invisibility",
+    "attributes": {
+      "name": "Invisibility",
+      "description": [
+        "A creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person. The spell ends for a target that attacks or casts a spell."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+      ],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 1 hour",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 2,
+      "material": "An eyelash encased in gum arabic."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "illusion" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

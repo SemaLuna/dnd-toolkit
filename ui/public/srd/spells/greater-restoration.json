@@ -1,0 +1,34 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "greater-restoration",
+    "attributes": {
+      "name": "Greater Restoration",
+      "description": [
+        "You imbue a creature you touch with positive energy to undo a debilitating effect. You can reduce the target's exhaustion level by one, or end one of the following effects on the target:",
+        "- One effect that charmed or petrified the target",
+        "- One curse, including the target's attunement to a cursed magic item",
+        "- Any reduction to one of the target's ability scores",
+        "- One effect reducing the target's hit point maximum"
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 5,
+      "material": "Diamond dust worth at least 100gp, which the spell consumes."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } }
+      ],
+      "subclasses": []
+    }
+  }
+}

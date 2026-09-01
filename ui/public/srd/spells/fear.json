@@ -1,0 +1,35 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "fear",
+    "attributes": {
+      "name": "Fear",
+      "description": [
+        "You project a phantasmal image of a creature's worst fears. Each creature in a 30-foot cone must succeed on a wisdom saving throw or drop whatever it is holding and become frightened for the duration.",
+        "While frightened by this spell, a creature must take the Dash action and move away from you by the safest available route on each of its turns, unless there is nowhere to move. If the creature ends its turn in a location where it doesn't have line of sight to you, the creature can make a wisdom saving throw. On a successful save, the spell ends for that creature."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 3,
+      "areaOfEffect": { "type": "cone", "size": 30 },
+      "material": "A white feather or the heart of a hen.",
+      "effectOnSaveSuccess": "none"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "wis" } },
+      "school": { "data": { "type": "magic-schools", "id": "illusion" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

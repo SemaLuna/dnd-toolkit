@@ -1,0 +1,49 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "thunderwave",
+    "attributes": {
+      "name": "Thunderwave",
+      "description": [
+        "A wave of thunderous force sweeps out from you. Each creature in a 15-foot cube originating from you must make a constitution saving throw. On a failed save, a creature takes 2d8 thunder damage and is pushed 10 feet away from you. On a successful save, the creature takes half as much damage and isn't pushed.",
+        "In addition, unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the spell's effect, and the spell emits a thunderous boom audible out to 300 feet."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d8 for each slot level above 1st."
+      ],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "areaOfEffect": { "type": "cube", "size": 15 },
+      "baseDamage": "2d8",
+      "damageAtSlotLevel": {
+        "1": "2d8",
+        "2": "3d8",
+        "3": "4d8",
+        "4": "5d8",
+        "5": "6d8",
+        "6": "7d8",
+        "7": "8d8",
+        "8": "9d8",
+        "9": "10d8"
+      },
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "damageType": { "data": { "type": "damage-types", "id": "thunder" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

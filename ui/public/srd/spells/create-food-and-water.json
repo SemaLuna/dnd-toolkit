@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "create-food-and-water",
+    "attributes": {
+      "name": "Create Food and Water",
+      "description": [
+        "You create 45 pounds of food and 30 gallons of water on the ground or in containers within range, enough to sustain up to fifteen humanoids or five steeds for 24 hours. The food is bland but nourishing, and spoils if uneaten after 24 hours. The water is clean and doesn't go bad."
+      ],
+      "higherLevel": [],
+      "range": "30 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 3
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "conjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "paladin" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

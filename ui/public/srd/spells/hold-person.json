@@ -1,0 +1,40 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "hold-person",
+    "attributes": {
+      "name": "Hold Person",
+      "description": [
+        "Choose a humanoid that you can see within range. The target must succeed on a wisdom saving throw or be paralyzed for the duration. At the end of each of its turns, the target can make another wisdom saving throw. On a success, the spell ends on the target."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional humanoid for each slot level above 2nd. The humanoids must be within 30 feet of each other when you target them."
+      ],
+      "range": "60 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 2,
+      "material": "A small, straight piece of iron.",
+      "effectOnSaveSuccess": "none"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "wis" } },
+      "school": { "data": { "type": "magic-schools", "id": "enchantment" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

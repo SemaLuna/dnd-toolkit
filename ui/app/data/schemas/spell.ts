@@ -6,7 +6,7 @@ export default {
   fields: [
     { name: 'name', kind: 'field' },
     { name: 'level', kind: 'field' },
-    { name: 'desc', kind: 'field' },
+    { name: 'description', kind: 'field' },
     { name: 'higherLevel', kind: 'field' },
     { name: 'range', kind: 'field' },
     { name: 'components', kind: 'field' },
@@ -15,6 +15,7 @@ export default {
     { name: 'concentration', kind: 'field' },
     { name: 'castingTime', kind: 'field' },
     { name: 'attackType', kind: 'field' },
+    { name: 'baseDamage', kind: 'field' },
     { name: 'damageAtCharacterLevel', kind: 'field' },
     {
       kind: 'resource',

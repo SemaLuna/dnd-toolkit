@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "power-word-stun",
+    "attributes": {
+      "name": "Power Word Stun",
+      "description": [
+        "You speak a word of power that can overwhelm the mind of one creature you can see within range, leaving it dumbfounded. If the target has 150 hit points or fewer, it is stunned. Otherwise, the spell has no effect.",
+        "The stunned target must make a constitution saving throw at the end of each of its turns. On a successful save, this stunning effect ends."
+      ],
+      "higherLevel": [],
+      "range": "60 feet",
+      "components": ["V"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 8
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "enchantment" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": []
+    }
+  }
+}

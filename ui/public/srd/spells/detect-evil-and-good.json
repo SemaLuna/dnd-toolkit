@@ -1,0 +1,30 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "detect-evil-and-good",
+    "attributes": {
+      "name": "Detect Evil and Good",
+      "description": [
+        "For the duration, you know if there is an aberration, celestial, elemental, fey, fiend, or undead within 30 feet of you, as well as where the creature is located. Similarly, you know if there is a place or object within 30 feet of you that has been magically consecrated or desecrated.",
+        "The spell can penetrate most barriers, but it is blocked by 1 foot of stone, 1 inch of common metal, a thin sheet of lead, or 3 feet of wood or dirt."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 1,
+      "areaOfEffect": { "type": "sphere", "size": 30 }
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "divination" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "paladin" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

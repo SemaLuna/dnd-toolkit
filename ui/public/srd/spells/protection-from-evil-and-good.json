@@ -1,0 +1,35 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "protection-from-evil-and-good",
+    "attributes": {
+      "name": "Protection from Evil and Good",
+      "description": [
+        "Until the spell ends, one willing creature you touch is protected against certain types of creatures: aberrations, celestials, elementals, fey, fiends, and undead.",
+        "The protection grants several benefits. Creatures of those types have disadvantage on attack rolls against the target. The target also can't be charmed, frightened, or possessed by them. If the target is already charmed, frightened, or possessed by such a creature, the target has advantage on any new saving throw against the relevant effect."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 1,
+      "material": "Holy water or powdered silver and iron, which the spell consumes."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "paladin" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "devotion" } }
+      ]
+    }
+  }
+}

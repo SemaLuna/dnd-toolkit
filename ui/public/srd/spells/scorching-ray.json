@@ -1,0 +1,37 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "scorching-ray",
+    "attributes": {
+      "name": "Scorching Ray",
+      "description": [
+        "You create three rays of fire and hurl them at targets within range. You can hurl them at one target or several.",
+        "Make a ranged spell attack for each ray. On a hit, the target takes 2d6 fire damage."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 3rd level or higher, you create one additional ray for each slot level above 2nd."
+      ],
+      "range": "120 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2,
+      "baseDamage": "2d6",
+      "damageAtSlotLevel": { "2": "2d6" }
+    },
+    "relationships": {
+      "damageType": { "data": { "type": "damage-types", "id": "fire" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "fiend" } }
+      ]
+    }
+  }
+}

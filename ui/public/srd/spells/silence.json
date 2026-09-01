@@ -1,0 +1,34 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "silence",
+    "attributes": {
+      "name": "Silence",
+      "description": [
+        "For the duration, no sound can be created within or pass through a 20-foot-radius sphere centered on a point you choose within range. Any creature or object entirely inside the sphere is immune to thunder damage, and creatures are deafened while entirely inside it.",
+        "Casting a spell that includes a verbal component is impossible there."
+      ],
+      "higherLevel": [],
+      "range": "120 feet",
+      "components": ["V", "S"],
+      "ritual": true,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 2,
+      "areaOfEffect": { "type": "sphere", "size": 20 }
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "illusion" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "ranger" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}
