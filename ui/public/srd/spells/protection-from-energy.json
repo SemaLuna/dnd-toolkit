@@ -1,0 +1,34 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "protection-from-energy",
+    "attributes": {
+      "name": "Protection From Energy",
+      "description": [
+        "For the duration, the willing creature you touch has resistance to one damage type of your choice: acid, cold, fire, lightning, or thunder."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 1 hour",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 3
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "ranger" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

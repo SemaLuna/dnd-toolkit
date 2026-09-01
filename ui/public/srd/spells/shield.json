@@ -1,0 +1,28 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "shield",
+    "attributes": {
+      "name": "Shield",
+      "description": [
+        "An invisible barrier of magical force appears and protects you. Until the start of your next turn, you have a +5 bonus to AC, including against the triggering attack, and you take no damage from magic missile."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "1 round",
+      "concentration": false,
+      "castingTime": "1 reaction",
+      "level": 1
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

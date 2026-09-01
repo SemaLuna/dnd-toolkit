@@ -1,0 +1,29 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "greater-invisibility",
+    "attributes": {
+      "name": "Greater Invisibility",
+      "description": [
+        "You or a creature you touch becomes invisible until the spell ends. Anything the target is wearing or carrying is invisible as long as it is on the target's person."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 4
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "illusion" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "land" } }]
+    }
+  }
+}

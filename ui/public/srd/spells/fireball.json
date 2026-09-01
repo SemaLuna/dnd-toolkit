@@ -1,0 +1,49 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "fireball",
+    "attributes": {
+      "name": "Fireball",
+      "description": [
+        "A bright streak flashes from your pointing finger to a point you choose within range and then blossoms with a low roar into an explosion of flame. Each creature in a 20-foot-radius sphere centered on that point must make a dexterity saving throw. A target takes 8d6 fire damage on a failed save, or half as much damage on a successful one.",
+        "The fire spreads around corners. It ignites flammable objects in the area that aren't being worn or carried."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 4th level or higher, the damage increases by 1d6 for each slot level above 3rd."
+      ],
+      "range": "150 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 3,
+      "areaOfEffect": { "type": "sphere", "size": 20 },
+      "baseDamage": "8d6",
+      "damageAtSlotLevel": {
+        "3": "8d6",
+        "4": "9d6",
+        "5": "10d6",
+        "6": "11d6",
+        "7": "12d6",
+        "8": "13d6",
+        "9": "14d6"
+      },
+      "material": "A tiny ball of bat guano and sulfur.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "dex" } },
+      "damageType": { "data": { "type": "damage-types", "id": "fire" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "fiend" } }
+      ]
+    }
+  }
+}

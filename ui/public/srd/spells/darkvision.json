@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "darkvision",
+    "attributes": {
+      "name": "Darkvision",
+      "description": [
+        "You touch a willing creature to grant it the ability to see in the dark. For the duration, that creature has darkvision out to a range of 60 feet."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "8 hours",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2,
+      "material": "Either a pinch of dried carrot or an agate."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "transmutation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "ranger" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

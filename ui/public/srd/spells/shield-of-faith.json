@@ -1,0 +1,29 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "shield-of-faith",
+    "attributes": {
+      "name": "Shield of Faith",
+      "description": [
+        "A shimmering field appears and surrounds a creature of your choice within range, granting it a +2 bonus to AC for the duration."
+      ],
+      "higherLevel": [],
+      "range": "60 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 bonus action",
+      "level": 1,
+      "material": "A small parchment with a bit of holy text written on it."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "paladin" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

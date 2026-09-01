@@ -1,0 +1,29 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "beacon-of-hope",
+    "attributes": {
+      "name": "Beacon of Hope",
+      "description": [
+        "This spell bestows hope and vitality. Choose any number of creatures within range. For the duration, each target has advantage on wisdom saving throws and death saving throws, and regains the maximum number of hit points possible from any healing."
+      ],
+      "higherLevel": [],
+      "range": "30 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 3
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [{ "data": { "type": "classes", "id": "cleric" } }],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "life" } },
+        { "data": { "type": "classes", "id": "devotion" } }
+      ]
+    }
+  }
+}

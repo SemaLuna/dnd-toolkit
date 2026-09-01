@@ -1,0 +1,37 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "blindness-deafness",
+    "attributes": {
+      "name": "Blindness/Deafness",
+      "description": [
+        "You can blind or deafen a foe. Choose one creature that you can see within range to make a constitution saving throw. If it fails, the target is either blinded or deafened (your choice) for the duration. At the end of each of its turns, the target can make a constitution saving throw. On a success, the spell ends."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 3rd level or higher, you can target one additional creature for each slot level above 2nd."
+      ],
+      "range": "30 feet",
+      "components": ["V"],
+      "ritual": false,
+      "duration": "1 minute",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2,
+      "effectOnSaveSuccess": "none"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "school": { "data": { "type": "magic-schools", "id": "necromancy" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "fiend" } }
+      ]
+    }
+  }
+}

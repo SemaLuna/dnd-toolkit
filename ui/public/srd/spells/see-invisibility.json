@@ -1,0 +1,30 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "see-invisibility",
+    "attributes": {
+      "name": "See Invisibility",
+      "description": [
+        "For the duration of the spell, you see invisible creatures and objects as if they were visible, and you can see through Ethereal. The ethereal objects and creatures appear ghostly translucent."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "1 hour",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2,
+      "material": "A dash of talc and a small amount of silver powder."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "divination" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

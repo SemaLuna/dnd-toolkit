@@ -1,0 +1,28 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "divine-favor",
+    "attributes": {
+      "name": "Divine Favor",
+      "description": [
+        "Your prayer empowers you with divine radiance. Until the spell ends, your weapon attacks deal an extra 1d4 radiant damage on a hit."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Up to 1 minute",
+      "concentration": true,
+      "castingTime": "1 bonus action",
+      "level": 1,
+      "baseDamage": "1d4",
+      "damageAtSlotLevel": { "1": "1d4" }
+    },
+    "relationships": {
+      "damageType": { "data": { "type": "damage-types", "id": "radiant" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [{ "data": { "type": "classes", "id": "paladin" } }],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

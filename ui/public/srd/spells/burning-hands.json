@@ -1,0 +1,50 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "burning-hands",
+    "attributes": {
+      "name": "Burning Hands",
+      "description": [
+        "As you hold your hands with thumbs touching and fingers spread, a thin sheet of flames shoots forth from your outstretched fingertips. Each creature in a 15-foot cone must make a dexterity saving throw. A creature takes 3d6 fire damage on a failed save, or half as much damage on a successful one.",
+        "The fire ignites any flammable objects in the area that aren't being worn or carried."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, the damage increases by 1d6 for each slot level above 1st."
+      ],
+      "range": "Self",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "areaOfEffect": { "type": "cone", "size": 15 },
+      "baseDamage": "3d6",
+      "damageAtSlotLevel": {
+        "1": "3d6",
+        "2": "4d6",
+        "3": "5d6",
+        "4": "6d6",
+        "5": "7d6",
+        "6": "8d6",
+        "7": "9d6",
+        "8": "10d6",
+        "9": "11d6"
+      },
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "dex" } },
+      "damageType": { "data": { "type": "damage-types", "id": "fire" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "fiend" } }
+      ]
+    }
+  }
+}

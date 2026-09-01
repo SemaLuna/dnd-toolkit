@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "misty-step",
+    "attributes": {
+      "name": "Misty Step",
+      "description": [
+        "Briefly surrounded by silvery mist, you teleport up to 30 feet to an unoccupied space that you can see."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 bonus action",
+      "level": 2
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "conjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "land" } }
+      ]
+    }
+  }
+}

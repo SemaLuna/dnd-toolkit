@@ -1,0 +1,46 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "ice-storm",
+    "attributes": {
+      "name": "Ice Storm",
+      "description": [
+        "A hail of rock-hard ice pounds to the ground in a 20-foot-radius, 40-foot-high cylinder centered on a point within range. Each creature in the cylinder must make a dexterity saving throw. A creature takes 2d8 bludgeoning damage and 4d6 cold damage on a failed save, or half as much damage on a successful one.",
+        "Hailstones turn the storm's area of effect into difficult terrain until the end of your next turn."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 5th level or higher, the bludgeoning damage increases by 1d8 for each slot level above 4th."
+      ],
+      "range": "300 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 4,
+      "areaOfEffect": { "type": "cylinder", "size": 20 },
+      "baseDamage": "2d8 + 4d6",
+      "damageAtSlotLevel": {
+        "4": "2d8 + 4d6",
+        "5": "3d8 + 4d6",
+        "6": "4d8 + 4d6",
+        "7": "5d8 + 4d6",
+        "8": "6d8 + 4d6",
+        "9": "7d8 + 4d6"
+      },
+      "material": "A pinch of dust and a few drops of water.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "dex" } },
+      "damageType": { "data": { "type": "damage-types", "id": "bludgeoning" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "land" } }]
+    }
+  }
+}

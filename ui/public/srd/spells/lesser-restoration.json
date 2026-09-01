@@ -1,0 +1,35 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "lesser-restoration",
+    "attributes": {
+      "name": "Lesser Restoration",
+      "description": [
+        "You touch a creature and can end either one disease or one condition afflicting it. The condition can be blinded, deafened, paralyzed, or poisoned."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 2
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "abjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "paladin" } },
+        { "data": { "type": "classes", "id": "ranger" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "life" } },
+        { "data": { "type": "classes", "id": "devotion" } }
+      ]
+    }
+  }
+}

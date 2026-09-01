@@ -1,0 +1,48 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "cure-wounds",
+    "attributes": {
+      "name": "Cure Wounds",
+      "description": [
+        "A creature you touch regains a number of hit points equal to 1d8 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d8 for each slot level above 1st."
+      ],
+      "range": "Touch",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "baseHeal": "1d8 + MOD",
+      "healAtSlotLevel": {
+        "1": "1d8 + MOD",
+        "2": "2d8 + MOD",
+        "3": "3d8 + MOD",
+        "4": "4d8 + MOD",
+        "5": "5d8 + MOD",
+        "6": "6d8 + MOD",
+        "7": "7d8 + MOD",
+        "8": "8d8 + MOD",
+        "9": "9d8 + MOD"
+      }
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "paladin" } },
+        { "data": { "type": "classes", "id": "ranger" } }
+      ],
+      "subclasses": [
+        { "data": { "type": "classes", "id": "lore" } },
+        { "data": { "type": "classes", "id": "life" } }
+      ]
+    }
+  }
+}

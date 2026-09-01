@@ -1,0 +1,45 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "insect-plague",
+    "attributes": {
+      "name": "Insect Plague",
+      "description": [
+        "Swarming, biting locusts fill a 20-foot-radius sphere centered on a point you choose within range. The sphere spreads around corners. The sphere remains for the duration, and its area is lightly obscured. The sphere's area is difficult terrain.",
+        "When the area appears, each creature in it must make a constitution saving throw. A creature takes 4d10 piercing damage on a failed save, or half as much damage on a successful one. A creature must also make this saving throw when it enters the spell's area for the first time on a turn or ends its turn there."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 6th level or higher, the damage increases by 1d10 for each slot level above 5th."
+      ],
+      "range": "300 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Up to 10 minutes",
+      "concentration": true,
+      "castingTime": "1 action",
+      "level": 5,
+      "areaOfEffect": { "type": "sphere", "size": 20 },
+      "baseDamage": "4d10",
+      "damageAtSlotLevel": {
+        "5": "4d10",
+        "6": "5d10",
+        "7": "6d10",
+        "8": "7d10",
+        "9": "8d10"
+      },
+      "material": "A few grains of sugar, some kernels of grain, and a smear of fat.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "damageType": { "data": { "type": "damage-types", "id": "piercing" } },
+      "school": { "data": { "type": "magic-schools", "id": "conjuration" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "sorcerer" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "land" } }]
+    }
+  }
+}

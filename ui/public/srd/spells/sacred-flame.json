@@ -1,0 +1,36 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "sacred-flame",
+    "attributes": {
+      "name": "Sacred Flame",
+      "description": [
+        "Flame-like radiance descends on a creature that you can see within range. The target must succeed on a dexterity saving throw or take 1d8 radiant damage. The target gains no benefit from cover for this saving throw.",
+        "The spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+      ],
+      "higherLevel": [],
+      "range": "60 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 0,
+      "damageAtCharacterLevel": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      },
+      "baseDamage": "1d8",
+      "effectOnSaveSuccess": "none"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "dex" } },
+      "damageType": { "data": { "type": "damage-types", "id": "radiant" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [{ "data": { "type": "classes", "id": "cleric" } }],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

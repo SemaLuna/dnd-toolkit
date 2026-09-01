@@ -1,0 +1,43 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "circle-of-death",
+    "attributes": {
+      "name": "Circle of Death",
+      "description": [
+        "A sphere of negative energy ripples out in a 60-foot radius sphere from a point within range. Each creature in that area must make a constitution saving throw. A target takes 8d6 necrotic damage on a failed save, or half as much damage on a successful one."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 7th level or higher, the damage increases by 2d6 for each slot level above 6th."
+      ],
+      "range": "150 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 6,
+      "areaOfEffect": { "type": "sphere", "size": 60 },
+      "baseDamage": "8d6",
+      "damageAtSlotLevel": {
+        "6": "8d6",
+        "7": "10d6",
+        "8": "12d6",
+        "9": "14d6"
+      },
+      "material": "The powder of a crushed black pearl worth at least 500 gp.",
+      "effectOnSaveSuccess": "half"
+    },
+    "relationships": {
+      "dc": { "data": { "type": "saving-throws", "id": "con" } },
+      "damageType": { "data": { "type": "damage-types", "id": "necrotic" } },
+      "school": { "data": { "type": "magic-schools", "id": "necromancy" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": []
+    }
+  }
+}

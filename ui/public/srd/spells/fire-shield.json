@@ -1,0 +1,32 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "fire-shield",
+    "attributes": {
+      "name": "Fire Shield",
+      "description": [
+        "Thin and vaporous flame surround your body for the duration of the spell, radiating a bright light bright light in a 10-foot radius and dim light for an additional 10 feet. You can end the spell using an action to make it disappear.",
+        "The flames are around you a heat shield or cold, your choice. The heat shield gives you cold damage resistance and the cold resistance to fire damage.",
+        "In addition, whenever a creature within 5 feet of you hits you with a melee attack, flames spring from the shield. The attacker then suffers 2d8 points of fire damage or cold, depending on the model."
+      ],
+      "higherLevel": [],
+      "range": "Self",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "10 minutes",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 4,
+      "areaOfEffect": { "type": "sphere", "size": 5 },
+      "baseDamage": "2d8",
+      "damageAtSlotLevel": { "4": "2d8" },
+      "material": "A little phosphorus or a firefly."
+    },
+    "relationships": {
+      "damageType": { "data": { "type": "damage-types", "id": "fire" } },
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [{ "data": { "type": "classes", "id": "wizard" } }],
+      "subclasses": [{ "data": { "type": "classes", "id": "fiend" } }]
+    }
+  }
+}

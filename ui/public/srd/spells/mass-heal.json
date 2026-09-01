@@ -1,0 +1,27 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "mass-heal",
+    "attributes": {
+      "name": "Mass Heal",
+      "description": [
+        "A flood of healing energy flows from you into injured creatures around you. You restore up to 700 hit points, divided as you choose among any number of creatures that you can see within range. Creatures healed by this spell are also cured of all diseases and any effect making them blinded or deafened. This spell has no effect on undead or constructs."
+      ],
+      "higherLevel": [],
+      "range": "60 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 9,
+      "baseHeal": "700",
+      "healAtSlotLevel": { "9": "700" }
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "conjuration" } },
+      "classes": [{ "data": { "type": "classes", "id": "cleric" } }],
+      "subclasses": []
+    }
+  }
+}

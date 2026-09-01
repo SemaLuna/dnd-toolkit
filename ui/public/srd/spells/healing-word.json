@@ -1,0 +1,43 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "healing-word",
+    "attributes": {
+      "name": "Healing Word",
+      "description": [
+        "A creature of your choice that you can see within range regains hit points equal to 1d4 + your spellcasting ability modifier. This spell has no effect on undead or constructs."
+      ],
+      "higherLevel": [
+        "When you cast this spell using a spell slot of 2nd level or higher, the healing increases by 1d4 for each slot level above 1st."
+      ],
+      "range": "60 feet",
+      "components": ["V"],
+      "ritual": false,
+      "duration": "Instantaneous",
+      "concentration": false,
+      "castingTime": "1 bonus action",
+      "level": 1,
+      "baseHeal": "1d4 + MOD",
+      "healAtSlotLevel": {
+        "1": "1d4 + MOD",
+        "2": "2d4 + MOD",
+        "3": "3d4 + MOD",
+        "4": "4d4 + MOD",
+        "5": "5d4 + MOD",
+        "6": "6d4 + MOD",
+        "7": "7d4 + MOD",
+        "8": "8d4 + MOD",
+        "9": "9d4 + MOD"
+      }
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "evocation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "cleric" } },
+        { "data": { "type": "classes", "id": "druid" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

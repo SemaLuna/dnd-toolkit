@@ -1,0 +1,31 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "jump",
+    "attributes": {
+      "name": "Jump",
+      "description": [
+        "You touch a creature. The creature's jump distance is tripled until the spell ends."
+      ],
+      "higherLevel": [],
+      "range": "Touch",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "1 minute",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 1,
+      "material": "A grasshopper's hind leg."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "transmutation" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "ranger" } },
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}

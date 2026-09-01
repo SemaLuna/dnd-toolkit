@@ -1,0 +1,33 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "hallucinatory-terrain",
+    "attributes": {
+      "name": "Hallucinatory Terrain",
+      "description": [
+        "You make natural terrain in a 150-foot cube in range look, sound, and smell like some other sort of natural terrain. Thus, open fields or a road can be made to resemble a swamp, hill, crevasse, or some other difficult or impassable terrain. A pond can be made to seem like a grassy meadow, a precipice like a gentle slope, or a rock-strewn gully like a wide and smooth road. Manufactured structures, equipment, and creatures within the area aren't changed in appearance.",
+        "The tactile characteristics of the terrain are unchanged, so creatures entering the area are likely to see through the illusion. If the difference isn't obvious by touch, a creature carefully examining the illusion can attempt an Intelligence (Investigation) check against your spell save DC to disbelieve it. A creature who discerns the illusion for what it is, sees it as a vague image superimposed on the terrain."
+      ],
+      "higherLevel": [],
+      "range": "300 feet",
+      "components": ["V", "S", "M"],
+      "ritual": false,
+      "duration": "24 hours",
+      "concentration": false,
+      "castingTime": "10 minutes",
+      "level": 4,
+      "areaOfEffect": { "type": "cube", "size": 150 },
+      "material": "A stone, a twig, and a bit of green plant."
+    },
+    "relationships": {
+      "school": { "data": { "type": "magic-schools", "id": "illusion" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "bard" } },
+        { "data": { "type": "classes", "id": "druid" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "land" } }]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "data": {
+    "type": "spells",
+    "id": "chill-touch",
+    "attributes": {
+      "name": "Chill Touch",
+      "description": [
+        "You create a ghostly, skeletal hand in the space of a creature within range. Make a ranged spell attack against the creature to assail it with the chill of the grave. On a hit, the target takes 1d8 necrotic damage, and it can't regain hit points until the start of your next turn. Until then, the hand clings to the target.",
+        "If you hit an undead target, it also has disadvantage on attack rolls against you until the end of your next turn.",
+        "This spell's damage increases by 1d8 when you reach 5th level (2d8), 11th level (3d8), and 17th level (4d8)."
+      ],
+      "higherLevel": [],
+      "range": "120 feet",
+      "components": ["V", "S"],
+      "ritual": false,
+      "duration": "1 round",
+      "concentration": false,
+      "castingTime": "1 action",
+      "level": 0,
+      "attackType": "ranged",
+      "damageAtCharacterLevel": {
+        "1": "1d8",
+        "5": "2d8",
+        "11": "3d8",
+        "17": "4d8"
+      },
+      "baseDamage": "1d8"
+    },
+    "relationships": {
+      "damageType": { "data": { "type": "damage-types", "id": "necrotic" } },
+      "school": { "data": { "type": "magic-schools", "id": "necromancy" } },
+      "classes": [
+        { "data": { "type": "classes", "id": "sorcerer" } },
+        { "data": { "type": "classes", "id": "warlock" } },
+        { "data": { "type": "classes", "id": "wizard" } }
+      ],
+      "subclasses": [{ "data": { "type": "classes", "id": "lore" } }]
+    }
+  }
+}
